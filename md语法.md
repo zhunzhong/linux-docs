@@ -52,6 +52,6 @@
 
 # 九、 图片
 
-![](https://github.com/zhunzhong/linux-docs/blob/master/images/test.png)
+![图片](https://github.com/zhunzhong/linux-docs/blob/master/images/test.png)
 
 
