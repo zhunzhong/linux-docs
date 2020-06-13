@@ -64,5 +64,5 @@ ssh -T git@github.com
 Hi zhunzhong! You've successfully authenticated, but GitHub does not provide shell access.
 表示配置ok
 ```
-之前已经是https的链接，现在想要用SSH提交怎么办？
+之前已经是https的链接，现在想要用SSH提交怎么办   
 直接修改项目目录下 .git文件夹下的config文件，将地址修改一下就好了
