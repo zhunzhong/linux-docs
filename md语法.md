@@ -52,6 +52,6 @@
 
 # 九、 图片
 
-![图片测试](./images/test.png)
+![图片](./images/test.png)
 
 
