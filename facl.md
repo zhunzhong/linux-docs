@@ -4,4 +4,8 @@
 ```
 setfacl -m o::rwx <路径>
 setfacl -m d:o::rwx <路径>
+
+#递归设置权限
+setfacl -R -m o::rwx <路径>
+setfacl -R -m d:o::rwx <路径>
 ```
