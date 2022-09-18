@@ -22,7 +22,36 @@ docker push <repository>:<tag>
 
 #从镜像仓库拉取指定镜像
 docker pull <repository>:<tag>
+
+#删除镜像
+docker rmi 
+
+#删除容器
+docker rm 
+
+#查看容器资源消耗
+docker container stats <container-id>
+
+#查看容器基本信息
+docker inspect <container-id>
+
+#启动容器命令样例（-e传递环境变量、-v映射路径，前面是本机路径、-p端口映射，前面是本机端口）
+docker run --name rbc-service -p 9908:9908 -e ACTIVE_ENV=dev -e NACOS_SERVER=192.168.2.177  -v /home/logs:/home/logs -v /home/gclogs/xxx-service:/app/gclogs/  -d  rbc-service:v1.0.1
+
+#批量删除停止的容器（$0全部，$1 awk分割第一个，awk -F可指定分割符号）
+docker rm $(docker ps -a | grep Exited | awk '${print $1}')
 ```
+
+
+
+# docker-compose常见命令
+
+```
+docker-compose [stop|start|restart|rm|ps]
+docker-compose up -d 对于已经启动的服务不会重启启动
+```
+
+
 
 # centos系统docker安装
 
