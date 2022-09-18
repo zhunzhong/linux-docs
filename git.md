@@ -185,3 +185,14 @@ git push origin -d dev
 删除远程分支dev
 ```
 
+
+
+# git常见问题
+
+fatal: The remote end hung up unexpectedly
+
+```
+#文件过大，设置文件缓存将Http缓存设置大一些，比如1G
+git config --global http.postBuffer 1048576000
+```
+
