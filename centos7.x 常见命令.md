@@ -50,3 +50,15 @@
    ```
    firewall-cmd --zone=public(作用域) --remove-port=80/tcp(端口和访问类型) --permanent(永久生效)
    ```
+
+## 服务器时间设置
+
+1.查看时区
+```
+timedatectl
+```
+
+2.设置时区
+```
+timedatectl set-timezone Asia/Shanghai 
+```

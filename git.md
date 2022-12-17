@@ -8,6 +8,8 @@ git remote -v
 修改远程分支地址
 ```
 git remote set-url origin http://192.168.3.4:3000/zhunzhong/test.git
+git remote set-url origin http://192.168.3.4:3000/lzkj/base-swap.git
+git remote set-url origin http://192.168.3.4:3000/lzkj/test-swap.git
 ```
 
 查看本地所有分支
