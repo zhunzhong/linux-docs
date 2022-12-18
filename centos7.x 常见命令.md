@@ -62,3 +62,29 @@ timedatectl
 ```
 timedatectl set-timezone Asia/Shanghai 
 ```
+
+## 配置服务器静态ip
+1.配置BOOTPROTO
+```
+BOOTPROTO=static #dhcp:自动分配ip，static：静态ip 
+```
+2.ONBOOT
+```
+ONBOOT=yes #开启启动必须是yes
+```
+3.设置IP和掩码等
+```
+IPADDR=192.168.254.100  #ip地址
+NETWORK=255.255.255.0  #子网掩码
+GATEWAY=192.168.254.1 #网关
+DNS1=192.168.0.1  #域名服务器1
+DNS2=8.8.8.8  #域名服务器2
+```
+4.重启网卡
+```
+systemctl restart network
+```
+
+
+## 配置服务器hostname
+hostnamectl set-hostname centos1
