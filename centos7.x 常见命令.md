@@ -51,6 +51,13 @@
    firewall-cmd --zone=public(作用域) --remove-port=80/tcp(端口和访问类型) --permanent(永久生效)
    ```
 
+7. 查看防火墙状态
+
+   ```
+   systemctl status firewalld
+   ```
+
+
 ## 服务器时间设置
 
 1.查看时区
@@ -77,7 +84,7 @@ ONBOOT=yes #开启启动必须是yes
 IPADDR=192.168.254.100  #ip地址
 NETWORK=255.255.255.0  #子网掩码
 GATEWAY=192.168.254.1 #网关
-DNS1=192.168.0.1  #域名服务器1
+DNS1=114.114.114.114  #域名服务器1
 DNS2=8.8.8.8  #域名服务器2
 ```
 4.重启网卡
